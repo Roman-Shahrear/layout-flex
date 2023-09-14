@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+.section-1 {
+    width: 100%;
+    height: auto;
+}
+
+.section-1 .container {
+    max-width: 980px;
+    width: 95%;
+    margin: 44px auto;
+    gap: 10px;
+    display: flex;
+    /* flex-direction: row; */
+}
+
+.section-1 .container .card {
+    flex: 1;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.section-1 .container .card-red {
+    background-color: red;
+}
+
+.section-1 .container .card-green {
+    background-color: green;
+}
+
+.section-1 .container .card-yellow {
+    background-color: blue;
+}
+
+.section-1 .container .card h1 {
+    color: white;
+    font-size: 44px;
+}
+
+
+/* section 2 css */
+.section-2 {
+    width: 100%;
+    height: auto;
+}
+
+.section-2 .container {
+    max-width: 980px;
+    width: 95%;
+    margin: 44px auto;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.section-2 .container .card {
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.section-2 .container .card-red {
+    background-color: red;
+    flex: 25;
+}
+
+.section-2 .container .card-green {
+    background-color: green;
+    flex: 50;
+}
+
+.section-2 .container .card-yellow {
+    background-color: blue;
+    flex: 25;
+}
+
+.section-2 .container .card h1 {
+    color: white;
+    font-size: 44px;
+}
+
+
+@media only screen and (max-width: 599px) {
+    .section-1 .container, .section-2 .container {
+        flex-direction: column;
+    }
+
+    .section-1 .container .card, .section-2 .container .card {
+        flex: none;
+    }
+}
